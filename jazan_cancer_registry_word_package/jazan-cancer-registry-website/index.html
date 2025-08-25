@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jazan Cancer Registry Implementation Framework</title>
+    <meta name="description" content="Comprehensive framework for establishing a population-based cancer registry in Jazan region, Saudi Arabia">
+    <meta property="og:title" content="Jazan Cancer Registry Implementation Framework">
+    <meta property="og:description" content="Evidence-based guidelines for cancer surveillance in Jazan region">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .section-fade {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-xl font-bold text-gray-800">
+                            <i class="fas fa-hospital-alt text-blue-600 mr-2"></i>
+                            Jazan Cancer Registry
+                        </h1>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#overview" class="text-gray-700 hover:text-blue-600 transition duration-300">Overview</a>
+                    <a href="#framework" class="text-gray-700 hover:text-blue-600 transition duration-300">Framework</a>
+                    <a href="#implementation" class="text-gray-700 hover:text-blue-600 transition duration-300">Implementation</a>
+                    <a href="#resources" class="text-gray-700 hover:text-blue-600 transition duration-300">Resources</a>
+                    <a href="#download" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        <i class="fas fa-download mr-2"></i>Download
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white pt-24 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center section-fade">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Jazan Cancer Registry
+                    <span class="block text-2xl md:text-3xl font-normal mt-2 text-blue-100">
+                        Implementation Framework
+                    </span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-blue-100">
+                    A comprehensive, evidence-based guide for establishing a population-based cancer registry in Jazan region, Saudi Arabia
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#overview" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300 inline-flex items-center justify-center">
+                        <i class="fas fa-eye mr-2"></i>Explore Framework
+                    </a>
+                    <a href="#download" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300 inline-flex items-center justify-center">
+                        <i class="fas fa-download mr-2"></i>Download Report
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 section-fade">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Framework Overview</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Based on WHO guidelines and international best practices, this framework addresses the unique healthcare infrastructure and demographic characteristics of Jazan region.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-100 p-6 rounded-xl card-hover">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-globe-americas text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">WHO Compliance</h3>
+                    <p class="text-gray-700">
+                        Fully aligned with WHO Global Initiative for Cancer Registry Development standards and IARC guidelines.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-emerald-100 p-6 rounded-xl card-hover">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-map-marked-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Regional Context</h3>
+                    <p class="text-gray-700">
+                        Tailored to Jazan's unique epidemiological patterns, healthcare infrastructure, and cultural considerations.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-violet-100 p-6 rounded-xl card-hover">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-chart-line text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Evidence-Based</h3>
+                    <p class="text-gray-700">
+                        Built on comprehensive analysis of 100+ research papers and international cancer registry experiences.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-orange-50 to-red-100 p-6 rounded-xl card-hover">
+                    <div class="text-orange-600 mb-4">
+                        <i class="fas fa-users text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Stakeholder Focused</h3>
+                    <p class="text-gray-700">
+                        Comprehensive engagement strategy for healthcare providers, government agencies, and communities.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-teal-50 to-cyan-100 p-6 rounded-xl card-hover">
+                    <div class="text-teal-600 mb-4">
+                        <i class="fas fa-shield-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Privacy Compliant</h3>
+                    <p class="text-gray-700">
+                        Robust data protection measures ensuring compliance with Saudi regulations and international standards.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-pink-50 to-rose-100 p-6 rounded-xl card-hover">
+                    <div class="text-pink-600 mb-4">
+                        <i class="fas fa-rocket text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Sustainable</h3>
+                    <p class="text-gray-700">
+                        Long-term sustainability plan with diversified funding sources and institutional integration.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Statistics -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 section-fade">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Jazan Region Context</h2>
+                <p class="text-xl text-gray-600">Key demographic and epidemiological characteristics</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl text-center shadow-lg card-hover">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">1.5M</div>
+                    <div class="text-gray-700 font-medium">Population</div>
+                    <div class="text-sm text-gray-500 mt-1">Regional residents</div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl text-center shadow-lg card-hover">
+                    <div class="text-4xl font-bold text-green-600 mb-2">0.7</div>
+                    <div class="text-gray-700 font-medium">Cervical Cancer ASIR</div>
+                    <div class="text-sm text-gray-500 mt-1">Per 100,000 women</div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl text-center shadow-lg card-hover">
+                    <div class="text-4xl font-bold text-purple-600 mb-2">1.7</div>
+                    <div class="text-gray-700 font-medium">Liver Cancer ASIR</div>
+                    <div class="text-sm text-gray-500 mt-1">Per 100,000 males</div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl text-center shadow-lg card-hover">
+                    <div class="text-4xl font-bold text-orange-600 mb-2"><30</div>
+                    <div class="text-gray-700 font-medium">Median Age</div>
+                    <div class="text-sm text-gray-500 mt-1">Years</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Framework Components -->
+    <section id="framework" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 section-fade">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Framework Components</h2>
+                <p class="text-xl text-gray-600">Comprehensive approach to cancer registry implementation</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <i class="fas fa-sitemap text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Registry Structure</h3>
+                            <p class="text-gray-700">Hybrid model combining population-based and hospital-based components with clear governance structure.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-green-100 p-3 rounded-lg">
+                            <i class="fas fa-database text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Data Collection</h3>
+                            <p class="text-gray-700">Standardized data elements following WHO guidelines with automated validation and quality control.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-purple-100 p-3 rounded-lg">
+                            <i class="fas fa-check-circle text-purple-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Quality Assurance</h3>
+                            <p class="text-gray-700">Multi-level validation procedures ensuring data completeness, accuracy, and international comparability.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-orange-100 p-3 rounded-lg">
+                            <i class="fas fa-graduation-cap text-orange-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Training Program</h3>
+                            <p class="text-gray-700">Comprehensive capacity building with modular curriculum and ongoing professional development.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Implementation Phases</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Foundation</div>
+                                <div class="text-sm text-gray-600">Months 1-12: Setup and pilot implementation</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Expansion</div>
+                                <div class="text-sm text-gray-600">Months 13-24: Network expansion and integration</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-purple-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Maturation</div>
+                                <div class="text-sm text-gray-600">Months 25-36: Full operation and sustainability</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Timeline -->
+    <section id="implementation" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 section-fade">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Implementation Timeline</h2>
+                <p class="text-xl text-gray-600">Phased approach ensuring systematic deployment and quality assurance</p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-foundation text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Phase 1: Foundation</h3>
+                        <div class="text-blue-600 font-semibold mb-3">Months 1-12</div>
+                        <ul class="text-sm text-gray-600 space-y-2 text-left">
+                            <li>• Staff recruitment and training</li>
+                            <li>• System setup and configuration</li>
+                            <li>• Pilot implementation</li>
+                            <li>• Quality assurance establishment</li>
+                        </ul>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-expand-arrows-alt text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Phase 2: Expansion</h3>
+                        <div class="text-green-600 font-semibold mb-3">Months 13-24</div>
+                        <ul class="text-sm text-gray-600 space-y-2 text-left">
+                            <li>• Network expansion to all hospitals</li>
+                            <li>• System integration</li>
+                            <li>• Research collaboration initiation</li>
+                            <li>• Community engagement</li>
+                        </ul>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-star text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Phase 3: Maturation</h3>
+                        <div class="text-purple-600 font-semibold mb-3">Months 25-36</div>
+                        <ul class="text-sm text-gray-600 space-y-2 text-left">
+                            <li>• Full geographic coverage</li>
+                            <li>• Impact assessment</li>
+                            <li>• Sustainability planning</li>
+                            <li>• International collaboration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 section-fade">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Resource Requirements</h2>
+                <p class="text-xl text-gray-600">Comprehensive resource planning for successful implementation</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                        <i class="fas fa-dollar-sign text-blue-600 mr-2"></i>
+                        Financial Investment
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Year 1</span>
+                            <span class="font-bold text-xl text-blue-600">$485,000</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Year 2</span>
+                            <span class="font-bold text-xl text-green-600">$425,000</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-700">Year 3</span>
+                            <span class="font-bold text-xl text-purple-600">$445,000</span>
+                        </div>
+                        <div class="border-t pt-4 mt-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-semibold text-gray-900">Total 3-Year</span>
+                                <span class="font-bold text-2xl text-gray-900">$1,355,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-emerald-100 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                        <i class="fas fa-users text-green-600 mr-2"></i>
+                        Human Resources
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">8</div>
+                            <span class="text-gray-700">Year 1 Staff (FTE)</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">12</div>
+                            <span class="text-gray-700">Year 2-3 Staff (FTE)</span>
+                        </div>
+                        <div class="mt-4 text-sm text-gray-600">
+                            <p class="mb-2">Key positions include:</p>
+                            <ul class="space-y-1">
+                                <li>• Registry Director (MD/PhD)</li>
+                                <li>• Data Manager & Collectors</li>
+                                <li>• Quality Assurance Specialist</li>
+                                <li>• IT Support & Research Analyst</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-16 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="section-fade">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Download Complete Framework</h2>
+                <p class="text-xl mb-8 text-blue-100">
+                    Get the comprehensive 50+ page implementation guide with detailed protocols, templates, and resources.
+                </p>
+                
+                <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-8 mb-8">
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <div class="text-3xl font-bold mb-2">12</div>
+                            <div class="text-blue-100">Framework Components</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold mb-2">100+</div>
+                            <div class="text-blue-100">Research References</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold mb-2">50+</div>
+                            <div class="text-blue-100">Pages of Guidance</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="jazan_cancer_registry_framework_complete.md" download class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition duration-300 inline-flex items-center justify-center">
+                        <i class="fas fa-download mr-2"></i>Download Framework (MD)
+                    </a>
+                    <a href="jazan_cancer_registry_analysis.md" download class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300 inline-flex items-center justify-center">
+                        <i class="fas fa-file-alt mr-2"></i>Download Analysis
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">
+                        <i class="fas fa-hospital-alt mr-2"></i>
+                        Jazan Cancer Registry
+                    </h3>
+                    <p class="text-gray-300 mb-4">
+                        Comprehensive framework for establishing evidence-based cancer surveillance in Jazan region, Saudi Arabia.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Framework Features</h4>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>• WHO Guideline Compliance</li>
+                        <li>• Regional Context Analysis</li>
+                        <li>• Implementation Roadmap</li>
+                        <li>• Quality Assurance Protocols</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Key Benefits</h4>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>• Evidence-based cancer control</li>
+                        <li>• Improved patient outcomes</li>
+                        <li>• Research collaboration</li>
+                        <li>• Policy development support</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Jazan Cancer Registry Implementation Framework. Developed for public health advancement.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            // Add mobile menu functionality here
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-opacity-95', 'backdrop-blur-sm');
+            } else {
+                nav.classList.remove('bg-opacity-95', 'backdrop-blur-sm');
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all section elements
+        document.querySelectorAll('.section-fade').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
